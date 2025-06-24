@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS ObservacaoVaga (
 );
 
 CREATE TABLE IF NOT EXISTS vaga_observacaoVaga (
-  id_observacaoVaga INT PRIMARY KEY AUTO_INCREMENT,
+  id_observacaoVaga INT,
   id_vaga INT,
   PRIMARY KEY (id_observacaoVaga, id_vaga),
   FOREIGN KEY (id_observacaoVaga) REFERENCES ObservacaoVaga(id_observacaoVaga),
